@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@hono/node-server': ^1.2.0
+  '@hono/zod-validator': ^0.1.9
   '@types/merge-images': ^1.2.2
   canvas: ^2.11.2
   hono: ^3.7.2
@@ -12,6 +13,7 @@ specifiers:
 
 dependencies:
   '@hono/node-server': 1.2.0
+  '@hono/zod-validator': 0.1.9_hono@3.7.4+zod@3.22.4
   canvas: 2.11.2
   hono: 3.7.4
   merge-images: 2.0.0
@@ -225,6 +227,16 @@ packages:
   /@hono/node-server/1.2.0:
     resolution: {integrity: sha512-aHT8lDMLpd7ioXJ1/057+h+oE/k7rCOWmjklYDsE0jE4CoNB9XzG4f8dRHvw4s5HJFocaYDiGgYM/V0kYbQ0ww==}
     engines: {node: '>=18.0.0'}
+    dev: false
+
+  /@hono/zod-validator/0.1.9_hono@3.7.4+zod@3.22.4:
+    resolution: {integrity: sha512-qEG5xagKzyif283ldCKzp+aF9Aebclg0sfrgyRQQNAizmXpicZ3UGduST/Jp+a9bjt3mI+VyEXMftb4rogLxQA==}
+    peerDependencies:
+      hono: 3.*
+      zod: ^3.19.1
+    dependencies:
+      hono: 3.7.4
+      zod: 3.22.4
     dev: false
 
   /@mapbox/node-pre-gyp/1.0.11:
